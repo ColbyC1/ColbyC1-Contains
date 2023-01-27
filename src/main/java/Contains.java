@@ -1,5 +1,3 @@
-
-
 public class Contains {
 
     /**
@@ -10,7 +8,15 @@ public class Contains {
      * @param target the value that the method should be searching for.
      * @return true if arr contains target, false otherwise.
      */
-    public boolean arrayContains(int[] arr, int target){
+
+    public boolean arrayContains(int[] arr, int target) {
+
+        for(int num: arr) {
+            if(num == target) {
+                return true;
+            }
+        }
+
         return false;
     }
 }
